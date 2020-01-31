@@ -34,7 +34,7 @@ fips <- (county_fips_dp$data[[1]])
 pop_est_CT_counties <- merge(pop_est_CT_counties, fips, by.x = "NAME", by.y = "County", all.y = T)
 
 #Convert wide to long
-pop_est_CT_counties_long <- gather(pop_est_CT_counties, Year, Value, 2:9)
+pop_est_CT_counties_long <- gather(pop_est_CT_counties, Year, Value, 2:10)
 
 #Clean up year column
 pop_est_CT_counties_long$Year <- gsub("POPESTIMATE", "", pop_est_CT_counties_long$Year)
@@ -52,7 +52,7 @@ pop_est_CT_counties_long <- pop_est_CT_counties_long %>%
 # Write to File
 write.table(
   pop_est_CT_counties_long,
-  file.path(path_to_data, "census-population-by-county.csv"),
+  file.path(path_to_data, "census-population-by-county-2018.csv"),
   sep = ",",
   row.names = F
 )
