@@ -2,7 +2,7 @@ Census Annual Population Estimates by County
 
 Census Annual Population Estimates by County presents the 1-year population estimates per county, for a given year.
 
-Data Source: <https://www.census.gov/newsroom/press-kits/2018/city-town-estimates.html>
+Data Source: City and Town Population Totals, 2010-2019 (Subcounty Resident Population Estimates: April 1, 2010 to July 1, 2019 (SUB-EST2019) dataset) <https://www.census.gov/data/tables/time-series/demo/popest/2010s-total-cities-and-towns.html>
 
 ## License MIT
 
